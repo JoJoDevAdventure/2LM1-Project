@@ -13,9 +13,54 @@ var swiperPopular = new Swiper(".popular__container", {
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
+    lazyLoading: true,
+  
     
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#nav-right",
+      prevEl: "#nav-left",
     },
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: (".popular__container .swiper-custom-pagination"),
+      clickable: true,
+      renderBullet: function(index, className) {
+        return `<div class=${className}>
+        <span class="number">${index + 1}</span>
+        <span class="line"></span>
+        </div>`
+      }
+    }
 });
+
+var swiper2 = new Swiper(".destinations", {
+  slidesPerView: 'auto',
+  spaceBetween: 32,
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  lazyLoading: true,
+  
+
+  navigation: {
+    nextEl: "#nav-right",
+    prevEl: "#nav-left",
+  },
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: (".destinations .swiper-custom-pagination"),
+    clickable: true,
+    renderBullet: function(index, className) {
+      return `<div class=${className}>
+      <span class="number">${index + 1}</span>
+      <span class="line"></span>
+      </div>`
+    }
+  }
+
+});
+
