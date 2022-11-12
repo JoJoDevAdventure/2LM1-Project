@@ -566,6 +566,103 @@ section.hero{
     .popular__description{
         color: #1a6671;
     }
+
+    //gallery_section
+    .gallery{
+        padding-top: 8em;
+        margin-left: 4em;
+        margin-right: 2em;
+        .text_section{
+
+            margin-bottom: 3em;
+            padding: 0 10px;
+            margin-left: 1em;
+            h1{
+                font-size: 35px;
+                span{
+                    font-style: italic;
+                }
+            }
+            .row_2{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin-top: .6em;
+                    font-size: 18px;
+                }
+                
+            }
+           
+        }
+        .view{
+            right: 0;
+            margin-right: 0.5em;
+            margin-top: 0.7em;
+            a{
+                font-size: 18px;
+                color: aliceblue;
+                padding: 7px 7px;
+                background-color: rgb(120, 190, 207);
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    background:rgba(0, 136, 169, 1);
+                    color:rgb(255, 255, 255);
+                    transition: .3s linear;
+                }
+                svg{
+                   
+                    stroke: #ffffff;
+                    path{
+                        fill: #ffffff;
+                    }
+                    width: 2.3em;
+                    margin-top: -.6em;
+                    cursor: pointer;
+                }
+          
+            }
+        }
+        .image_section{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+            .box{
+               
+                img{
+                    border-radius: 0.7em;
+                    margin: .5em;
+                    width: 18em;
+                    height: 26em;
+                    box-shadow: 0 10px 5px rgba(217, 217, 225, 0.923);
+                    
+                }
+                overflow: hidden;
+                transition: 0.5s;
+                &:hover{
+                    z-index: 1;
+                    transform: scale(1.25);
+                    .imgBx::before{
+                        opacity: 1;
+                    }
+                    
+
+                }
+              
+              
+                
+            }
+
+            
+            
+            
+        }
+       
+        
+    }
     
    
 }
