@@ -5,12 +5,21 @@ body{
 }
 h3{
     text-align:left;
-    font-size: 12px;
+    font-size: 15px;
     margin: 10px;;
     padding-top: 10px;
 }
 a{
     text-decoration: none;
+    font-size: 1.3rem;
+}
+.logo{
+    color: #39859F;
+    font-weight: bold;
+    
+}
+.bx{
+    color: #797979;
 }
 .gallery{
     display:flex;
@@ -38,8 +47,8 @@ a{
     transition:translate(0px , -8px);
 }
 img{
-    width: 295px;
-    height: 285px;
+    width: 280px;
+    height: 279px;
     text-align:center;
     margin: 10px;
     display:flex;
@@ -51,7 +60,7 @@ p{
 }
 h5{
     font-size:17px;
-    text-align:initial ;
+    text-align:center;
     color:#56B0BE;
     margin:30px ;
 }
@@ -60,12 +69,6 @@ h6{
     text-align: left;
     color: #797979;
     margin: 15px;
-}
-.box-icon{
-    font-size:12px;
-    text-align: left;
-    color:#56B0BE;
-    margin:30px ;
 }
 
 ul{
@@ -77,10 +80,11 @@ ul{
     color:#797979 ;
 }
 li{
-    padding: 2px;
+    padding: 5px;
+    text-align:right;
 }
 .fa{
-    font-size: 15px;
+    font-size: 18px;
     transition: .4s;
    
 }
@@ -92,23 +96,14 @@ li{
     transition: .6s;
 }
 button{
-    text-align:center;
-    font-size: 15px;
-    color: #56B0BE;
-    width: 50%;
-    padding: 2px;
-    border:1px;
-    outline:none;
-    cursor: pointer;
-    margin-top: 2px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-
+    display: none;
 }
+
 .Select{
     background-color:lightgray;
 
 }
+
 @media(max-width:1000px){
     .content{
         width:30%;
