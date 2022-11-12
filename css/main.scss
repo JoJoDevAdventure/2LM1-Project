@@ -541,11 +541,11 @@ section.hero{
     }
     
     .popular__img{
-        width: 13em;
+        width: 15em;
         object-fit: cover;
         height: 16em;
         margin: 1em;
-        border-radius: 1em;
+        border-radius: .5em;
 
     }
     .popular__data{
@@ -596,7 +596,8 @@ section.hero{
         }
         .view{
             right: 0;
-            margin-right: 0.5em;
+            margin-right: 1.5em;
+
             margin-top: 0.7em;
             a{
                 font-size: 18px;
@@ -629,32 +630,83 @@ section.hero{
             position: relative;
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 10em;
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            margin-top: 4em;
 
             .box{
-               
+               position: relative;
+               overflow:hidden;
                 img{
+                    margin: .1em;
+                    display: block;
                     border-radius: 0.7em;
-                    margin: .5em;
                     width: 18em;
-                    height: 26em;
-                    box-shadow: 0 10px 5px rgba(217, 217, 225, 0.923);
+                    height: 21em;
+                    object-fit: cover;
+                    object-position: center;
+                    
                     
                 }
                 overflow: hidden;
                 transition: 0.5s;
                 &:hover{
+                    
                     z-index: 1;
                     transform: scale(1.25);
                     .imgBx::before{
                         opacity: 1;
                     }
                     
+                    .content_fade{
+                        opacity:1;
+
+                    }
+                    img.blur{
+                        filter: blur(2px);
+
+                    }
+                    img.zoom{
+                        transform: scale(1.25);
+                    }
+                    
 
                 }
+                .content_fade{
+                    opacity: 0;
+                    position: absolute;
+                    inset: 0;
+                    font-size: 1.1rem;
+                    padding: 2rem;
+                    background: rgba(255, 255, 255, 0.4);
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    h3{
+                        margin-top: 4em;
+                        color: black;
+                        
+                    }
+                    p{
+                        font-weight: 500;
+                    }
+
+                }
+                img,
+                .content{
+                    transition: 200ms ease-in-out;
+                }
+
+
+            
+
+            }
               
               
                 
-            }
+            
 
             
             

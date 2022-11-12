@@ -443,12 +443,12 @@ section.hero .down-arrow path {
     font-family: "Poppins", sans-serif;
   }
   .popular__img {
-    width: 13em;
+    width: 15em;
     -o-object-fit: cover;
        object-fit: cover;
     height: 16em;
     margin: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
   }
   .popular__data {
     padding: 0 0.25rem 0 0.75rem;
@@ -494,7 +494,7 @@ section.hero .down-arrow path {
   }
   .gallery .view {
     right: 0;
-    margin-right: 0.5em;
+    margin-right: 1.5em;
     margin-top: 0.7em;
   }
   .gallery .view a {
@@ -525,17 +525,27 @@ section.hero .down-arrow path {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 4em;
   }
   .gallery .image_section .box {
+    position: relative;
+    overflow: hidden;
     overflow: hidden;
     transition: 0.5s;
   }
   .gallery .image_section .box img {
+    margin: 0.1em;
+    display: block;
     border-radius: 0.7em;
-    margin: 0.5em;
     width: 18em;
-    height: 26em;
-    box-shadow: 0 10px 5px rgba(217, 217, 225, 0.923);
+    height: 21em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .gallery .image_section .box:hover {
     z-index: 1;
@@ -543,6 +553,38 @@ section.hero .down-arrow path {
   }
   .gallery .image_section .box:hover .imgBx::before {
     opacity: 1;
+  }
+  .gallery .image_section .box:hover .content_fade {
+    opacity: 1;
+  }
+  .gallery .image_section .box:hover img.blur {
+    filter: blur(2px);
+  }
+  .gallery .image_section .box:hover img.zoom {
+    transform: scale(1.25);
+  }
+  .gallery .image_section .box .content_fade {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    font-size: 1.1rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .gallery .image_section .box .content_fade h3 {
+    margin-top: 4em;
+    color: black;
+  }
+  .gallery .image_section .box .content_fade p {
+    font-weight: 500;
+  }
+  .gallery .image_section .box img,
+.gallery .image_section .box .content {
+    transition: 200ms ease-in-out;
   }
 }
 @-webkit-keyframes introload {
