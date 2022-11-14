@@ -3,13 +3,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
+a :not(Recovery){
   text-decoration: none;
   font-size: 1.3rem;
 }
 
-button {
-  display: none;
+button  {
+  display: ;
 }
 
 .hero-img {
