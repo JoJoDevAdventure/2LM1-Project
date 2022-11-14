@@ -1,0 +1,15 @@
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 2;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        
+    }
+}
+.forgotyourpassword{
+    font-size: medium;
+}
