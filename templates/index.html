@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,12 +15,12 @@
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <script src="js/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
 
        
-        <script defer src="js/app.js"></script>
+        <script defer src="{% static 'js/app.js' %}"></script>
 
     </head>
     <body>
@@ -118,7 +120,7 @@
                 </div>
                 <div class="row">
                     <article class="column">
-                        <img src="images/dest1.jpg" alt="Paris,France.">
+                        <img src="{% static 'images/dest1.jpg' %}" alt="Paris,France.">
                         <div class="nums">
                             <h1 class="numbers">
                                 <span class="zeros">0</span>1&nbsp;&nbsp;
@@ -141,7 +143,7 @@
 
                  
                     <article class="column">
-                        <img src="images/dest2.jpg" alt="Iceland,Norway.">
+                        <img src="{% static 'images/dest2.jpg' %}" alt="Iceland,Norway.">
                         <div class="nums">
 
                             <h1 class="numbers"><span class="zeros">0</span>2&nbsp;&nbsp;
@@ -160,7 +162,7 @@
 
                    
                     <article class="column">
-                        <img src="images/dest3.jpg" alt="Pekin,China.">
+                        <img src="{% static 'images/dest3.jpg' %}" alt="Pekin,China.">
                         <div class="nums">
 
                             <h1 class="numbers"><span class="zeros">0</span>3&nbsp;&nbsp;
@@ -180,7 +182,7 @@
 
                    
                     <article class="column">
-                        <img src="images/dest4.jpg" alt="Istanbul,Turkey.">
+                        <img src="{% static 'images/dest4.jpg' %}" alt="Istanbul,Turkey.">
                         <div class="nums">
 
                             <h1 class="numbers"><span class="zeros">0</span>4&nbsp;&nbsp;
@@ -212,7 +214,7 @@
                     <div class="popular__container mySwiper">
                         <div class="swiper-wrapper">
                             <article class="popular__card swiper-slide">
-                                <img src="images/popular1.png" alt="" class="popular__img">
+                                <img src="{% static 'images/popular1.png' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
@@ -230,7 +232,7 @@
                                 </div>
                             </article>
                             <article class="popular__card swiper-slide">
-                                <img src="images/popular2.jpg" alt="" class="popular__img">
+                                <img src="{% static 'images/popular2.jpg' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
@@ -247,7 +249,7 @@
                                 </div>
                             </article>
                             <article class="popular__card swiper-slide">
-                                <img src="images/popular3.jpg" alt="" class="popular__img">
+                                <img src="{% static 'images/popular3.jpg' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
@@ -264,7 +266,7 @@
                                 </div>
                             </article>
                             <article class="popular__card swiper-slide">
-                                <img src="images/popular4.jpg" alt="" class="popular__img">
+                                <img src="{% static 'images/popular4.jpg' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
@@ -282,7 +284,7 @@
                                 </div>
                             </article>
                             <article class="popular__card swiper-slide">
-                                <img src="images/popular5.png" alt="" class="popular__img">
+                                <img src="{% static 'images/popular5.png' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
