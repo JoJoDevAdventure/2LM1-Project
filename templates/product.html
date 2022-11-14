@@ -1,4 +1,5 @@
-<!--{% load static %}-->
+{% load static %}
+
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -7,7 +8,7 @@
             <meta name="description" 
             content="This is our Product page"/> 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link rel="stylesheet" href="Product.css">
+            <link rel="stylesheet" href="{% static 'css/product.css' %}">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>E-state</title>
@@ -18,19 +19,19 @@
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
             <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-            <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-            <link rel="stylesheet" href="css/main.css">
-            <link rel="stylesheet" href="css/swiper-bundle.min.css">
-            <script src="js/swiper-bundle.min.js"></script>
+            <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+            <link rel="stylesheet" href="{% static 'css/main.css' %}">
+            <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+            <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
         
-            <script defer src="js/app.js"></script>
+            <script defer src="{% static 'js/app.js' %}"></script>
         </head>
         <body>
             
             <div class="wrapper">
                 <header>
                 
-                    <a href="https://e-state.com" class="logo">
+                    <a href="/templates/index.html" class="logo">
                     E-State<i class="bx bxs-home-alt-2"></i>
                     
                       
@@ -42,8 +43,8 @@
                         </svg>
                             
                         <ul class="first">
-                            <li><a href="https://e-state.com">Home</a></li>
-                            <li><a href="https://e-state.com/product/">Product</a></li>
+                            <li><a href="/templates/index.html">Home</a></li>
+                            <li><a href="/templates/product.html">Product</a></li>
                             <li><a href="https://e-state.com/ressources/">Ressources</a></li>
                             <li><a href="https://e-state.com/contact/">Contact</a></li>
                             <li><a href="https://e-state.com/blog/">Blog</a></li>
@@ -61,7 +62,7 @@
     
             <div class="gallery">
                 <div class="content">
-                    <img src="images/First.png" width="287px" height="279">
+                    <img src="{% static 'images/product/First.png' %}" width="287px" height="279">
                     <h3>Large and Luxurious appartement with Pool in Thaïlande</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$150.000</h6>
@@ -79,7 +80,7 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/Second.png" width="287px" height="279">
+                    <img src="{% static 'images/product/Second.png' %}" width="287px" height="279">
                     <h3>Big villas with Terrace,Pool and Garden in California</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$250.000</h6>
@@ -96,8 +97,8 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/3.png" width="287px" height="279">
-                    <h3>Comfortable and Simple Wood house in Bali’s forest</h3>
+                    <img src="{% static 'images/product/3.png' %}" width="287px" height="279">
+                    <h3>Comfortable and Simple Wood house in Bali's forest</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$200.000</h6>
                     <i class='bx bxs-building-house' style='color:#56b0be'  ></i>
@@ -113,7 +114,7 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/4.png" width="287px" height="279">
+                    <img src="{% static 'images/product/4.png' %}" width="287px" height="279">
                     <h3>Magnificent house with a private beachfront Pool  in Maldives</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$170.000</h6>
@@ -129,7 +130,7 @@
                 </div>
                 
                 <div class="content">
-                    <img src="images/5.png" width="287px" height="279">
+                    <img src="{% static 'images/product/5.png' %}" width="287px" height="279">
                     <h3>Magnificent house with a private beachfront Pool  in Maldives</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$240.000</h6>
@@ -145,7 +146,7 @@
                     
                 </div>
                 <div class="content">
-                    <img src="images/6.png" width="287px" height="279">
+                    <img src="{% static 'images/product/6.png' %}" width="287px" height="279">
                     <h3>Lovely house with a wonderful view in Greece</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$180.000</h6>
@@ -161,7 +162,7 @@
                    
                 </div>
                 <div class="content">
-                    <img src="images/7.png"width="287px" height="279">
+                    <img src="{% static 'images/product/7.png' %}"width="287px" height="279">
                     <h3>Large house with a private big Pool and a Terrace  in Ibiza</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$300.000</h6>
@@ -177,7 +178,7 @@
                     
                 </div>
                 <div class="content">
-                    <img src="images/8.png" width="287px" height="279">
+                    <img src="{% static 'images/product/8.png' %}" width="287px" height="279">
                     <h3>Modern house with  Pool and big Garden in Paris</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$295.000</h6>
@@ -193,7 +194,7 @@
                     
                 </div>
                 <div class="content">
-                    <img src="images/First.png" width="287px" height="279">
+                    <img src="{% static 'images/product/First.png' %}" width="287px" height="279">
                     <h3>Large and Luxurious appartement with Pool in Thaïlande</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$150.000</h6>
@@ -211,7 +212,7 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/Second.png" width="287px" height="279">
+                    <img src="{% static 'images/product/Second.png' %}" width="287px" height="279">
                     <h3>Big villas with Terrace,Pool and Garden in California</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$250.000</h6>
@@ -228,8 +229,8 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/3.png" width="287px" height="279">
-                    <h3>Comfortable and Simple Wood house in Bali’s forest</h3>
+                    <img src="{% static 'images/product/3.png' %}" width="287px" height="279">
+                    <h3>Comfortable and Simple Wood house in Bali's forest</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$200.000</h6>
                     <i class='bx bxs-building-house' style='color:#56b0be'  ></i>
@@ -245,7 +246,7 @@
                 </div>
 
                 <div class="content">
-                    <img src="images/4.png" width="287px" height="279">
+                    <img src="{% static 'images/product/4.png' %}" width="287px" height="279">
                     <h3>Magnificent house with a private beachfront Pool  in Maldives</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$170.000</h6>
@@ -261,7 +262,7 @@
                 </div>
                 
                 <div class="content">
-                    <img src="images/5.png" width="287px" height="279">
+                    <img src="{% static 'images/product/5.png' %}" width="287px" height="279">
                     <h3>Magnificent house with a private beachfront Pool  in Maldives</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$240.000</h6>
@@ -277,7 +278,7 @@
                     
                 </div>
                 <div class="content">
-                    <img src="images/6.png" width="287px" height="279">
+                    <img src="{% static 'images/product/6.png' %}" width="287px" height="279">
                     <h3>Lovely house with a wonderful view in Greece</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$180.000</h6>
@@ -293,7 +294,7 @@
                    
                 </div>
                 <div class="content">
-                    <img src="images/7.png"width="287px" height="279">
+                    <img src="{% static 'images/product/7.png' %}"width="287px" height="279">
                     <h3>Large house with a private big Pool and a Terrace  in Ibiza</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$300.000</h6>
@@ -309,7 +310,7 @@
                     
                 </div>
                 <div class="content">
-                    <img src="images/8.png" width="287px" height="279">
+                    <img src="{% static 'images/product/8.png' %}" width="287px" height="279">
                     <h3>Modern house with  Pool and big Garden in Paris</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <h6>$295.000</h6>
