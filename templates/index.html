@@ -1,3 +1,4 @@
+{ % load static % }
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,12 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>E-state</title>
-        <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
-        <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
-        <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
-        <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
-        <link href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap' %}" rel="stylesheet">
-        <link href="'{% static 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' %}" rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
         <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
@@ -23,7 +24,7 @@
         <div class="wrapper">
             <header>
                 
-                <a href="{% static 'https://e-state.com' %}" class="logo">
+                <a href="/templates/index.html" class="logo">
                 E-State<i class='bx bxs-home-alt-2'></i>
                 </a>
                 
@@ -33,17 +34,17 @@
                     </svg>
                         
                     <ul class="first">
-                        <li><a href="{% static 'https://e-state.com' %}">Home</a></li>
-                        <li><a href="{% static 'https://e-state.com/product/' %}">Product</a></li>
-                        <li><a href="{% static 'https://e-state.com/ressources/' %}">Ressources</a></li>
-                        <li><a href="{% static 'https://e-state.com/contact/' %}">Contact</a></li>
-                        <li><a href="{% static 'https://e-state.com/blog/' %}">Blog</a></li>
+                        <li><a href="https://e-state.com">Home</a></li>
+                        <li><a href="https://e-state.com/product/">Product</a></li>
+                        <li><a href="https://e-state.com/ressources/Ressources</a></li>
+                        <li><a href="https://e-state.com/contact/">Contact</a></li>
+                        <li><a href="https://e-state.com/blog/">Blog</a></li>
                     </ul>  
                     
                         
                 </nav>
         
-                <a class="signup" href="{% static 'https://e-state.com/SignUp/' %}"><button>Sign Up</button> </a>
+                <a class="signup" href="https://e-state.com/SignUp/"><button>Sign Up</button> </a>
                 <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
                 </svg>
