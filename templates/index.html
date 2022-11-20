@@ -1,4 +1,4 @@
-{ % load static % }
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +7,6 @@
         <meta name="description" 
         content="This is our Product page"/> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="{% static 'css/product.css' %}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>E-state</title>
@@ -42,7 +41,7 @@
                     <ul class="first">
                         <li><a href="https://e-state.com">Home</a></li>
                         <li><a href="https://e-state.com/product/">Product</a></li>
-                        <li><a href="https://e-state.com/ressources/Ressources</a></li>
+                        <li><a href="https://e-state.com/ressources/"> Ressources</a></li>
                         <li><a href="https://e-state.com/contact/">Contact</a></li>
                         <li><a href="https://e-state.com/blog/">Blog</a></li>
                     </ul>  
@@ -99,16 +98,10 @@
                             
                             </div>
                             
-                            
-
-
-                          
                         </div>
-                      
-                       
+                    
                     </div>
 
-                    
             </section>
             
 
@@ -132,7 +125,7 @@
                 <div class="destinations swiper">
                     <div class="row swiper-wrapper">
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/dest1.jpg' %}" alt="Paris,France.">
+                            <img src="{% static 'images/index/dest1' %}" alt="Paris,France.">
                             <div class="nums">
                                 <h1 class="numbers">
                                     <span class="zeros">0</span>1&nbsp;&nbsp;
@@ -155,7 +148,7 @@
     
                      
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/dest2.jpg' %}" alt="Iceland,Norway.">
+                            <img src="{% static 'images/index/dest2.jpg' %}" alt="Iceland,Norway.">
                             <div class="nums">
     
                                 <h1 class="numbers"><span class="zeros">0</span>2&nbsp;&nbsp;
@@ -174,7 +167,7 @@
     
                        
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/dest3.jpg' %}" alt="Pekin,China.">
+                            <img src="{% static 'images/index/dest3.jpg' %}" alt="Pekin,China.">
                             <div class="nums">
     
                                 <h1 class="numbers"><span class="zeros">0</span>3&nbsp;&nbsp;
@@ -194,7 +187,7 @@
     
                        
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/dest4.jpg' %}" alt="Istanbul,Turkey.">
+                            <img src="{% static 'images/index/dest4.jpg' %}" alt="Istanbul,Turkey.">
                             <div class="nums">
     
                                 <h1 class="numbers"><span class="zeros">0</span>4&nbsp;&nbsp;
