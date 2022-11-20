@@ -26,6 +26,8 @@ a{
     justify-content: center;
     align-items: center;
     margin: 25px 0;
+    position: absolute;
+    box-sizing: border-box;
 }
 .content{
     width: 20%;
@@ -46,10 +48,12 @@ a{
 }
 img{
     width: 280px;
-    height: 279px;
-    text-align:center;
+    height: auto;
+    text-align:justify;
     margin: 10px;
     display:flex;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 p{
     text-align: center;
@@ -63,19 +67,33 @@ h5{
     margin:30px ;
 }
 h6{
-    font-size: 15px;
-    text-align: left;
+    font-size: 18px;
+    text-align:left;
     color: #797979;
-    margin: 15px;
-}
+    margin: 20px;
+    position:sticky;
+    align-items: baseline;
 
+}
+.fa-sharp {
+    text-align:center;
+    font-size: 17px;
+    margin:0%;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    position:static;
+    transform: translate(-17%,288%);
+
+}
 ul{
     list-style: none;
     display:flex;
     justify-content:right;
-    align-items: center;
+    align-items:right;
     padding-top: 1px;
     color:#797979 ;
+    position: static;
 }
 li{
     padding: 5px;
@@ -100,6 +118,16 @@ button{
 .Select{
     background-color:lightgray;
 
+}
+body > div.gallery > nav > ul > li.page-item.active > a{
+    background-color:white;
+    
+}
+body > div.gallery > nav > ul > li:nth-child(n):hover>a{
+
+}
+.pagination a {
+    color: #56B0BE;
 }
 
 @media(max-width:1000px){
