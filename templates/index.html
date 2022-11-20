@@ -1,12 +1,7 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Product</title>
-        <meta name="description" 
-        content="This is our Product page"/> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>E-state</title>
@@ -15,21 +10,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+        <link rel="shortcut icon" href="{% static 'images/index/favicon.png' %}" type="image/x-icon">
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
-        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
-    
-        <script defer src="{% static 'js/app.js' %}"></script>
+        
+
     </head>
     <body>
         <div class="hero-img"></div>
         <div class="wrapper">
             <header>
                 
-                <a href="/templates/index.html" class="logo">
+                <a href="https://e-state.com" class="logo">
                 E-State<i class='bx bxs-home-alt-2'></i>
                 </a>
                 
@@ -41,7 +34,7 @@
                     <ul class="first">
                         <li><a href="https://e-state.com">Home</a></li>
                         <li><a href="https://e-state.com/product/">Product</a></li>
-                        <li><a href="https://e-state.com/ressources/"> Ressources</a></li>
+                        <li><a href="https://e-state.com/ressources/">Ressources</a></li>
                         <li><a href="https://e-state.com/contact/">Contact</a></li>
                         <li><a href="https://e-state.com/blog/">Blog</a></li>
                     </ul>  
@@ -98,10 +91,16 @@
                             
                             </div>
                             
+                            
+
+
+                          
                         </div>
-                    
+                      
+                       
                     </div>
 
+                    
             </section>
             
 
@@ -125,7 +124,7 @@
                 <div class="destinations swiper">
                     <div class="row swiper-wrapper">
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/index/dest1' %}" alt="Paris,France.">
+                            <img src="{% static 'images/index/dest1.jpg' %}" alt="Paris,France.">
                             <div class="nums">
                                 <h1 class="numbers">
                                     <span class="zeros">0</span>1&nbsp;&nbsp;
@@ -167,7 +166,7 @@
     
                        
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/index/dest3.jpg' %}" alt="Pekin,China.">
+                            <img src="{% static 'images/dest3.jpg' %}" alt="Pekin,China.">
                             <div class="nums">
     
                                 <h1 class="numbers"><span class="zeros">0</span>3&nbsp;&nbsp;
@@ -187,7 +186,7 @@
     
                        
                         <article class="column swiper-slide">
-                            <img src="{% static 'images/index/dest4.jpg' %}" alt="Istanbul,Turkey.">
+                            <img src="{% static 'images/dest4.jpg' %}" alt="Istanbul,Turkey.">
                             <div class="nums">
     
                                 <h1 class="numbers"><span class="zeros">0</span>4&nbsp;&nbsp;
@@ -261,7 +260,7 @@
                     <div class="popular__container swiper">
                         <div class="swiper-wrapper">
                             <article class="popular__card swiper-slide">
-                                <img src="{% static 'images/popular1.png' %}" alt="" class="popular__img">
+                                <img src="{% static 'images/index/popular1.png' %}" alt="" class="popular__img">
 
                                 <div class="popular__data">
                                     <h2 class="popular__price">
@@ -410,7 +409,7 @@
                     <div class="image_section">
                         <div class="box">
                             <div class="imgBx">
-                                <img src="{% static 'images/gallery1.jpg' %}" alt="Mountain Fuji" class="blur zoom">
+                                <img src="{% static 'images/index/gallery1.jpg' %}" alt="Mountain Fuji" class="blur zoom">
                                 <div class="content_fade">
                                     <h3>Mountain Fuji</h3>
                                     <p>Discover the beauty of nature in Japan</p>
@@ -421,7 +420,7 @@
                         
                         <div class="box">
                             <div class="imgBx">
-                                <img src="{% static 'images/gallery2.jpg' %}" alt="Venice, Italy" class="blur zoom">
+                                <img src="{% static 'images/index/gallery2.jpg' %}" alt="Venice, Italy" class="blur zoom">
                                 <div class="content_fade">
                                     <h3>Venice, Italy</h3>
                                     <p>Go on romantic outings on a boat.</p>
@@ -431,7 +430,7 @@
                         </div>
                         <div class="box">
                             <div class="imgBx">
-                                <img src="{% static 'images/gallery3.jpg' %}" alt="Germany" class="blur zoom">
+                                <img src="{% static 'images/index/gallery3.jpg' %}" alt="Germany" class="blur zoom">
                                 <div class="content_fade">
                                     <h3>Berlin, Germany.</h3>
                                     <p>Discover some monuments.</p>
@@ -441,7 +440,7 @@
                         </div>
                         <div class="box">
                             <div class="imgBx">
-                                <img src="{% static 'images/gallery4.jpg' %}" alt="Japan" class="blur zoom">
+                                <img src="{% static 'images/index/gallery4.jpg' %}" alt="Japan" class="blur zoom">
                                 <div class="content_fade">
                                     <h3>Kyoto, Japan</h3>
                                     <p>Discover some monuments.</p>
@@ -456,7 +455,10 @@
                 </div>
             </section>
         </div>
-
+        
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>       
+        <script defer src="{% static 'js/main.js' %}"></script>
 
         
     </body>
