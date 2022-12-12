@@ -9,12 +9,10 @@
 }
 body
 {
-    background: url(/back.jpg) ;
-    background-size:1600px;
-    position: relative;
-    height: auto;
-    width:auto;
+    background: url(/home.jpg) ;
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
 
 }
@@ -171,7 +169,7 @@ body
     text-decoration: none;
     font-size: 1.1em;
 }
-@media
+
 
 
 
