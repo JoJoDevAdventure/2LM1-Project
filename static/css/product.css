@@ -1,135 +1,118 @@
+/*products*/
 body{
-    margin:0;
-    font-family: sans-serif;
-    background-color:white ;
+    background-color: #E8E8E8;
+  
 }
-h3{
-    text-align:left;
-    font-size: 15px;
-    margin: 10px;;
-    padding-top: 10px;
+.row{
+    position: relative;
+    width: 1200px;
+    display:grid ;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
 }
-a{
-    text-decoration: none;
-    font-size: 1.3rem;
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
 }
-.logo{
-    color: #39859F;
-    font-weight: bold;
-    
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background-color:#56B0BE;
+}
+.star{
+    padding: 10px 0;
+}
+.star i {
+    font-size: 0.8rem;
+    color: #56B0BE;
+}
+.product{
+    width: 50%;
+    min-width: 50px;
+    padding: 20px 10px;
+    border:1px hidden;
+    border-radius: 2px;
+    box-shadow: 20px 10px 20px rgba(0,0,0, 0.02);
+    margin: 10px 0 ;
+    transition: 0.2s;
+}
+.product:hover{
+    box-shadow: 20px 10px 20px rgba(0,0,0, 0.06);
+  
+
 }
 
-.gallery{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+.product img{
+    position: relative;
+    width:287px;
+    height: 280px;
+    display: flex;
+    box-sizing:border-box;
+    object-fit:cover;
+
+}
+#featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+    background-color: #56B0BE;
+}
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+    background-color: #797979;
+    color: #fff;
+}
+.pagination a{
+    position: relative;
+    text-align: center;
+
+    color: #797979;
+}
+
+.p-name{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: auto;
+    position: sticky;
     align-items: center;
-    margin: 25px 0;
-    position: absolute;
-    box-sizing: border-box;
 }
-.content{
-    width: 20%;
-    margin: 15px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    padding-top: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0,0, 0.25),0 10px rgba(0, 0,0, 0.22);
-    transition: .5s;
-    background-color: #f2f2f2;
-}
-.content:hover{
-    box-shadow: 0 3px 6px rgba(0,0,0, 0.16),0 3px 6px rgba(0,0,0,0.23);
-    transition:translate(0px , -8px);
-}
-img{
-    width: 280px;
-    height: auto;
-    text-align:justify;
-    margin: 10px;
-    display:flex;
-    box-sizing: border-box;
-    object-fit: cover;
-}
-p{
-    text-align: center;
-    color: #56B0BE;
-    padding-top: 0 8px;
-}
-h5{
-    font-size:17px;
-    text-align:center;
-    color:#56B0BE;
-    margin:30px ;
-}
-h6{
+.p-price{
+  
     font-size: 18px;
+    font-weight: bold;
     text-align:left;
     color: #797979;
     margin: 20px;
     position:sticky;
     align-items: baseline;
+    transform:translate(-5%,50%);
 
 }
+.p-location{
+    font-size: 20px;
+    font-weight:bold ;
+    color: #56B0BE;
+    margin: auto;
+}
+h5{
+    font-size: 22px;
+    text-align: center;
+    color: #56B0BE;
+}
+
 .fa-sharp {
-    text-align:center;
-    font-size: 17px;
+    text-align:left;
+    font-size: 20px;
     margin:0%;
     display:flex;
     justify-content:space-around;
     align-items:flex-start;
     position:static;
-    transform: translate(-17%,288%);
+    transform: translate(-30%,120%);
 
 }
-ul{
-    list-style: none;
-    display:flex;
-    justify-content:right;
-    align-items:right;
-    padding-top: 1px;
-    color:#797979 ;
-    position: static;
-}
-li{
-    padding: 5px;
-    text-align:right;
-}
-.fa{
-    font-size: 18px;
-    transition: .4s;
-   
-}
-.checked{
-    color:#56B0BE;
-}
-.fa:hover{
-    transform: scale(1.3);
-    transition: .6s;
-}
-button{
-    display: none;
-}
-
-.Select{
-    background-color:lightgray;
-
-}
-body > div.gallery > nav > ul > li.page-item.active > a{
-    background-color:white;
-    
-}
-body > div.gallery > nav > ul > li:nth-child(n):hover>a{
-
-}
-.pagination a {
-    color: #56B0BE;
-}
-
 @media(max-width:1000px){
     .content{
         width:30%;
